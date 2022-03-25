@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/518097-background-hd.jpg);
+    color: white;
+    height: 150px;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+#unorderedList a:hover {
+    color: plum;
+}
+
+img {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: auto;
+}
+
+table {
+    border: 4px solid coral;
+    border-radius: 5px;
+}
+
+tbody td {
+    background-color: aqua;
+    opacity: 0.5;
+}
+
+tfoot {
+    text-align: right;
+}
