@@ -6,7 +6,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 {
+#header h1 {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/518097-background-hd.jpg);
     color: white;
     height: 150px;
@@ -20,7 +20,7 @@ p {
     font-size: 18px;
 }
 
-.breadcrumb > li {
+.breadcrumb>li {
     display: inline;
 }
 
@@ -78,20 +78,20 @@ button {
     text-shadow: 0 1px plum;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
     background: purple;
-    background: linear-gradient(purple,plum);
+    background: linear-gradient(purple, plum);
 }
 
 #skeuomorphicButton:hover {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
     background: plum;
-    background: linear-gradient(purple,plum);
+    background: linear-gradient(purple, plum);
 }
 
 #skeuomorphicButton:active {
-  margin-top: 22px;
-  box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
-  background: purple;
-  background: linear-gradient(plum,purple);
+    margin-top: 22px;
+    box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: purple;
+    background: linear-gradient(plum, purple);
 }
 
 #flatButton {
@@ -100,18 +100,78 @@ button {
     color: #fff;
     border: 2px solid deeppink;
     border-radius: 10px;
-  }
-  
-  #flatButton:hover {
+}
+
+#flatButton:hover {
     background-color: magenta;
     transition: background-color .15s, font-size .15s;
     font-size: 18px;
-  }
-  
-  #flatButton:active {
+}
+
+#flatButton:active {
     border-color: #fff;
-  }
+}
 
 tfoot {
     text-align: right;
+}
+
+.container {
+    background-color: brown;
+}
+
+.box {
+    background-color: chocolate;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.box #middle {
+    height: 150px;
+}
+
+#flex,
+#flexstart,
+#flexend,
+#center,
+#spacearound,
+#spacebetween {
+    display: flex;
+    text-align: center;
+}
+
+#block {
+    text-align: center;
+}
+
+#flexstart {
+    justify-content: start;
+}
+
+#flexend {
+    justify-content: end;
+}
+
+#center {
+    justify-content: center;
+}
+
+#spacearound {
+    justify-content: space-around;
+}
+
+#spacebetween {
+    justify-content: space-between;
+}
+
+.footerFlexBox {
+    margin-top: 30px;
+}
+
+.footerFlexBox a {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
 }
