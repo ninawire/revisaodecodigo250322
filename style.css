@@ -20,6 +20,25 @@ p {
     font-size: 18px;
 }
 
+.breadcrumb > li {
+    display: inline;
+}
+
+.breadcrumb li+li::before {
+    padding: 10px;
+    content: ">";
+    color: greenyellow;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: green;
+}
+
+.breadcrumb a:hover {
+    color: blue;
+}
+
 #unorderedList a:hover {
     color: plum;
 }
@@ -92,6 +111,7 @@ button {
   #flatButton:active {
     border-color: #fff;
   }
+
 tfoot {
     text-align: right;
 }
