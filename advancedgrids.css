@@ -10,7 +10,6 @@ h1, h2 {
     gap: 10px;
     grid-template: repeat(10, 1fr) / repeat(6, 1fr);
 }
-}
 
 h1, h2, h3 {
     font-family: monospace;
