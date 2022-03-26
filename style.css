@@ -6,18 +6,26 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#header h1 {
+#header {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/518097-background-hd.jpg);
-    color: white;
-    height: 150px;
-    width: auto;
-    padding: 10px;
-    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: beige;
+    min-height: 100px;
+    max-height: fit-content;
+    min-width: fit-content;
+    max-width: fill;
+    padding: 0%;
+    margin: 0%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .breadcrumb>li {
@@ -36,7 +44,8 @@ p {
 }
 
 .breadcrumb a:hover {
-    color: blue;
+    color: greenyellow;
+    text-shadow: 2px 2px black;
 }
 
 #unorderedList a:hover {
