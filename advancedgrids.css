@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas: "header header" "nav nav" "left right" "footer footer";
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 150px 200px 600px 200px;
+}
+
+h1, h2{
+    font-family: monospace;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(#FF4500, #FA8072);
+    grid-area: header;
+}
+
+nav {
+    background: linear-gradient(#FA8072, #FFDAB9);
+    grid-area: nav;
+}
+
+.left {
+    background: linear-gradient(#FFDAB9,#FFE4E1);
+    grid-area: left;
+}
+
+.right {
+    background: linear-gradient(#FFDAB9,#FFE4E1);
+    grid-area: right;
+}
+
+footer {
+    background: linear-gradient(#FFE4E1, white);
+    grid-area: footer;
+}
+
+a {
+    font-size: 20px;
+    color: orangered;
+}
